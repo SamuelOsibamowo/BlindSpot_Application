@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BlindSpot_Application</string>
+    <string name="see_all_recent_work">See All Recent Work</string>
+    <string name="blindspot">BlindSpot</string>
+    <string name="text_to_speech">button that turns text to speech on</string>
+    <string name="profile_picture">profile picture</string>
+</resources>
