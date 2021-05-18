@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+        val vibe = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
         val learnButton = findViewById<Button>(R.id.learn_Button)
         val practiceButton = findViewById<Button>(R.id.practice_Button)
         val seeAllButton = findViewById<ImageButton>(R.id.seeAll_Button)
@@ -24,16 +24,19 @@ class MainActivity : AppCompatActivity() {
         learnButton.setOnClickListener{
             val intent = Intent(this,LearnPage::class.java)
             startActivity(intent)
+            vibe.vibrate(100)
         }
 
         practiceButton.setOnClickListener{
             val intent = Intent(this,PracticePage::class.java)
             startActivity(intent)
+            vibe.vibrate(100)
         }
 
         seeAllButton.setOnClickListener{
             val intent = Intent(this,SeeMorePage::class.java)
             startActivity(intent)
+            vibe.vibrate(100)
         }
 
 
