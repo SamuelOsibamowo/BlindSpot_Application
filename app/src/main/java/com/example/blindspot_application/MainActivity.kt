@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         val practiceButton = findViewById<Button>(R.id.practice_Button)
         val seeAllButton = findViewById<ImageButton>(R.id.seeAll_Button)
 
+
+        //On click listener that watches when the learn/practice/seeAll button is pushed and then takes the user to the respective Activity
+
         learnButton.setOnClickListener{
             val intent = Intent(this,LearnPage::class.java)
             startActivity(intent)

@@ -7,6 +7,9 @@
     android:background="#FFA500"
     tools:context=".MainActivity">
 
+
+    <!--The start of the constraint guidelines I use to align buttons and images so that they are resized and fit every device screen-->
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
@@ -71,6 +74,9 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.4503546" />
 
+
+    <!--The relative layout used for positioning the audio button and the user profile button-->
+
     <RelativeLayout
         android:id="@+id/recentWork"
         android:layout_width="match_parent"
@@ -93,6 +99,7 @@
 
     </RelativeLayout>
 
+    <!--The buttons that lead to the learn and practice activites in the app-->
 
     <Button
         android:id="@+id/learn_Button"
@@ -116,6 +123,7 @@
         app:layout_constraintStart_toEndOf="@id/guideline8"
         app:layout_constraintTop_toTopOf="@id/guideline2" />
 
+    <!--The relative layout used for positioning the title of the application-->
 
     <RelativeLayout
         android:id="@+id/title"
@@ -134,6 +142,8 @@
 
 
     </RelativeLayout>
+
+    <!--The relative layout used for positioning the recent work area of the app and also holds the See all recent work button-->
 
     <RelativeLayout
         android:layout_width="match_parent"
