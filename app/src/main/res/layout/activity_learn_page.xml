@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".LearnPage">
 
+
+    <!--Constraint guides that help resize the buttons to fit any screen size-->
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
         android:layout_width="wrap_content"
@@ -27,6 +30,8 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".75"/>
 
+
+    <!--The actual buttons listed accordingly/in order-->
 
     <Button
     android:id="@+id/letters_button"

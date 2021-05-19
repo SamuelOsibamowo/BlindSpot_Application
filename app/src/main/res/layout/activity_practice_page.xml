@@ -6,14 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".PracticePage">
 
-    <TextView
-        android:id="@+id/textView"
+    <!--Constraint guides that help resize the buttons to fit any screen size-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Practice Activity Screen"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75"/>
+
+
+    <!--The actual buttons listed accordingly/in order-->
+
+    <Button
+        android:id="@+id/letters_button_prac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/lettersbuttonprac"
+        app:layout_constraintBottom_toTopOf="@id/guideline13"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/words_button_prac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/wordsbuttonprac"
+        app:layout_constraintBottom_toTopOf="@id/guideline14"
+        app:layout_constraintTop_toBottomOf="@id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sentances_button_prac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/sentancesbuttonprac"
+        app:layout_constraintBottom_toTopOf="@id/guideline15"
+        app:layout_constraintTop_toBottomOf="@id/guideline14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/paragraphs_button_prac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/paragraphbuttonprac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
